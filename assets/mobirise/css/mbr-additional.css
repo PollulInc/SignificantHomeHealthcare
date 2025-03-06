@@ -1427,7 +1427,7 @@ a {
 .cid-uDvPMVzb1x {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #f7f7f7;
+  background-image: url("../../../assets/images/hospital-background.png-1852x880.png");
 }
 .cid-uDvPMVzb1x .mbr-fallback-image.disabled {
   display: none;
@@ -1465,6 +1465,7 @@ a {
 .cid-uDvPMVzb1x .mbr-text,
 .cid-uDvPMVzb1x .mbr-section-btn {
   color: #000000;
+  text-align: center;
 }
 .cid-uDZlPwyX66 {
   padding-top: 6rem;
@@ -1551,8 +1552,6 @@ a {
   color: #0c2c68;
 }
 .cid-uEvL8xLIkP {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
   background-color: #ffffff;
 }
 .cid-uEvL8xLIkP .mbr-fallback-image.disabled {
@@ -1592,7 +1591,7 @@ a {
   }
 }
 .cid-uEvL8xLIkP .wrap {
-  background: url("../../../assets/images/screenshot-2025-03-04-125657-741x563.webp");
+  background: url("../../../assets/images/cardiac-mobile-device.jpg-777x579.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1610,6 +1609,9 @@ a {
 .cid-uEvL8xLIkP .mbr-text,
 .cid-uEvL8xLIkP .mbr-section-btn {
   color: #ffffff;
+}
+.cid-uEvL8xLIkP .mbr-description {
+  color: #0c2c68;
 }
 .cid-uDq5BMeFfK {
   padding-top: 6rem;
