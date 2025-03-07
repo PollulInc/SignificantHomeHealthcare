@@ -1427,7 +1427,7 @@ a {
 .cid-uEI1QmEMHp {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #f7f7f7;
+  background-image: url("../../../assets/images/hospital-background.png-1852x880.png");
 }
 .cid-uEI1QmEMHp .mbr-fallback-image.disabled {
   display: none;
@@ -1570,51 +1570,6 @@ a {
 }
 .cid-uEI4uylnN1 .row {
   flex-direction: row-reverse;
-}
-.cid-uEI1sg0Y4W {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #edefeb;
-}
-.cid-uEI1sg0Y4W .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-uEI1sg0Y4W .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-@media (max-width: 991px) {
-  .cid-uEI1sg0Y4W .image-wrapper {
-    margin-bottom: 1rem;
-  }
-}
-.cid-uEI1sg0Y4W .row {
-  flex-direction: row-reverse;
-}
-.cid-uEI1sg0Y4W .row {
-  align-items: center;
-}
-@media (max-width: 991px) {
-  .cid-uEI1sg0Y4W .image-wrapper {
-    padding: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .cid-uEI1sg0Y4W .text-wrapper {
-    padding: 0 2rem;
-  }
-}
-.cid-uEI1sg0Y4W .mbr-section-title {
-  color: #000000;
-}
-.cid-uEI1sg0Y4W .mbr-text,
-.cid-uEI1sg0Y4W .mbr-section-btn {
-  color: #232323;
 }
 .cid-uDq5BMeFfK {
   padding-top: 6rem;
