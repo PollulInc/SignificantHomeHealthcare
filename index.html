@@ -204,7 +204,7 @@
 </style>
 
 <section data-bs-version="5.1" class="content4 cid-business-card" id="business-card-section">
-    <div class="container">
+    <div class="container" style="margin-bottom: 60px;">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
                 <h3 class="mbr-section-title mbr-fonts-style mb-4 text-center display-2">
@@ -504,6 +504,181 @@
   </div>
 </section>
 
+<style>
+  .heartbeat-container {
+    background-color: #000;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ekg-line {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .ekg-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: ekg-dash 5s linear infinite;
+    stroke: #00ff00;
+    stroke-width: 2;
+  }
+  
+  @keyframes ekg-dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .heart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    transform: scale(1);
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  .heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #ff0000;
+    border-radius: 50px 50px 0 0;
+  }
+  
+  .heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    15% {
+      transform: scale(1.25);
+    }
+    30% {
+      transform: scale(1);
+    }
+    45% {
+      transform: scale(1.15);
+    }
+    60% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pulse-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 0, 0, 0.3);
+    animation: ring-pulse 2s infinite;
+  }
+  
+  @keyframes ring-pulse {
+    0% {
+      width: 150px;
+      height: 150px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  
+  .ekg-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 1;
+  }
+  
+  .heart-rate-text {
+    color: #00ff00;
+    font-family: monospace;
+    font-size: 24px;
+    text-align: center;
+    animation: blink 1.5s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+</style>
+
+<section data-bs-version="5.1" class="heartbeat-section" id="heartbeat-section">
+  <div class="heartbeat-container">
+    <div class="ekg-grid"></div>
+    
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <h3 class="mbr-section-title mbr-fonts-style text-center mb-4 display-2" style="color: #00ff00;">
+            <strong>Your Heart, Our Priority</strong>
+          </h3>
+          
+          <div class="ekg-line">
+            <svg width="100%" height="100%" viewBox="0 0 1000 100">
+              <path class="ekg-path" fill="none" d="M0,50 Q40,50 50,50 T90,50 T110,50 T150,50 T180,50 T200,20 T220,80 T240,50 T300,50 T320,50 T350,50 T400,50 L410,50 L420,20 L430,80 L440,50 L450,50 L460,50 L500,50 L510,50 L520,50 L530,20 L540,80 L550,50 L560,50 Q600,50 650,50 T700,50 T750,50 L760,50 L770,20 L780,80 L790,50 L800,50 T850,50 T900,50 T950,50 T1000,50" />
+            </svg>
+          </div>
+          
+          <div class="heart-container position-relative">
+            <div class="pulse-ring"></div>
+            <div class="heart"></div>
+          </div>
+          
+          <div class="heart-rate-text mt-4">
+            HR: 72 BPM | SpO₂: 98% | BP: 120/80
+          </div>
+          
+          <p class="mbr-text mbr-fonts-style text-center mt-4 display-7" style="color: #ffffff;">
+            At Significant Home Healthcare, we monitor your vital signs with precision and care.<br>
+            Our advanced cardiac monitoring services keep you safe and healthy in the comfort of your home.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section data-bs-version="5.1" class="people05 cid-uDq5BMeFfK" id="testimonials-5-uDq5BMeFfK">
 	
 
@@ -576,7 +751,7 @@
 					<div class="card-box align-left">
 						<p class="card-text mbr-fonts-style display-7">Exceptional service! They go above and beyond for their clients.</p>
 						<div class="img-wrapper mt-4 mb-3">
-							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" loading="lazy" class="lazyload" data-src="assets/images/photo-1692558588242-57cec1e32bba.webp">
+							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" loading="lazy" class="lazyload" data-src="assets/images/photo-1692558588242-fb31d4eb0a5e.webp">
 						</div>
 						<h5 class="card-title mbr-fonts-style display-7">
 							<strong>Linda White</strong>
